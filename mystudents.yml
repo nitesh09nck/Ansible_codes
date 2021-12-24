@@ -1,0 +1,16 @@
+---
+- mystudent:
+  - name: akil
+    phon: 999999999 
+    address: hyd
+
+  - name: ravi
+    phon: 778787888
+    address: chennai
+
+  - name: sunil
+    phon: 887878878
+    address: pune
+  
+
+  
