@@ -2,15 +2,25 @@
 - mystudent:
   - name: akil
     phon: 999999999 
-    address: hyd
+    address: 
+     - doorno: 76
+     - st.no.: 87
+     - pincode: 77777
+
 
   - name: ravi
     phon: 778787888
-    address: chennai
+    address: 
+     - doorno: 736
+     - st.no.: 88 
+     -  pincode: 88888888 
 
   - name: sunil
     phon: 887878878
-    address: pune
+    address: 
+     - doorno: 887 
+     -  st.no.: 767 
+     -  pincode: 767567 
   
 
   
