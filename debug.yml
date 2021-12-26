@@ -4,7 +4,7 @@
   tasks: 
    - name: i want to execute linux command directly
      command: hostname -f 
-     resister: result 
+     register: result 
 
    - name: i want to display output 
      debug:
