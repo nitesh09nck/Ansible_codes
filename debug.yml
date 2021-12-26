@@ -1,0 +1,23 @@
+--- 
+- hosts: 172.31.0.26
+  become: yes
+  tasks: 
+   - name: i want to execute linux command directly
+     command: hostname -f 
+     resister: result 
+
+   - name: i want to display output 
+     debug:
+      msg: "{{result}}"
+
+   - name: install git 
+     apt: 
+      name: git
+      state: present 
+     when: result:stderr =="" 
+
+   - name: install tree 
+     apt:
+      name: tree 
+      state: present 
+     when: result.stderr !=""  
