@@ -1,0 +1,19 @@
+--- 
+ - hosts: 172.31.0.230
+   become: yes
+   vars:
+    var1: git 
+    var2: tree 
+    var3: wget
+   tasks:
+   - name: install wget
+     yum:
+      name: "{{var3}}"
+
+   - name: install git 
+     yum:
+       name: "{{var1}}"
+
+   - name: install tree
+     yum:
+       name: "{{var2}}"
