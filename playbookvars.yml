@@ -9,11 +9,20 @@
    - name: install wget
      yum:
       name: "{{var3}}"
+   - name: i want to display var3
+     debug:
+      msg: "{{var3}}"
 
    - name: install git 
      yum:
        name: "{{var1}}"
+   - name: i want to display var1
+     debug:
+      msg: "{{var1}}"
 
    - name: install tree
      yum:
        name: "{{var2}}"
+   - name: i want to display var2
+     debug:
+      msg: "{{var2}}"
