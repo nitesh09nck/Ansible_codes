@@ -2,4 +2,4 @@
 - hosts: 172.31.0.26
   become: yes 
   tasks: 
-   - inlcude_tasks: myfile.yml
+    - inlcude_tasks: myfile.yml
