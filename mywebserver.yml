@@ -19,10 +19,10 @@
      yum:
        name: "{{mywebpackonredhat}}"
        state: present
-     when: ansible_os_family =="Redhat"
+     when: ansible_os_family =="RedHat"
 
    - name: i want to start httpd service
      service:
        name: "{{mywebpackonredhat}}"
        state: started
-     when: ansible_os_family =="Redhat"
+     when: ansible_os_family =="RedHat"
