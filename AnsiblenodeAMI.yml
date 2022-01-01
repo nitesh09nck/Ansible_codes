@@ -1,0 +1,17 @@
+--- 
+- hosts: localhost
+  become: yes
+  tasks:
+    - name: create ansible nodes
+      ec2:
+        key_name: mumbaikeypair
+        instance_type: t2.micro
+        image: ami-0dd6d74578c73eedf
+        wait: yes
+        group: mySG
+        count: 2
+        region: ap-south-1
+        vpc_subnet_id: subnet-09b7c49bc719d38ab
+        assign_public_ip: yes
+        instance_tags:
+              name: Ansible_node
